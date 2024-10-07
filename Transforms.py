@@ -3,8 +3,8 @@ import torch
 
 from typing import Union
 
-from cvprpkg.kernel import GaussianKernel2d
-from cvprpkg.ConvPkg import conv2d
+from .kernel import GaussianKernel2d
+from .ConvPkg import conv2d
 
 def bilinear_interpolate(image_original:Union[torch.Tensor, np.ndarray], x:Union[torch.Tensor, np.ndarray], y:Union[torch.Tensor, np.ndarray]):
     if isinstance(image_original, np.ndarray):
